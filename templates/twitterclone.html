@@ -16,10 +16,19 @@
 	<form method="POST", action="/">
 	    <input name="text">
 	    <input type="submit">
-	</form>
+  </form>
+  <!-- the method in div won't really don't anything you need to put it in a form -->
+  <!-- the action could have also been done using jquery -->
+    <form method="GET" action="/twitter_logout"> 
+    <div class="form-group" method="GET">
+        <input type="submit" name="logout" class="btn btn-info btn-md" value="logout">
+<!--        the class="btn btn" is a button function where you can create a logout button -->
+    </div>
+  </form>
 
   {% for tweet in get_comments %}
-    <div>{{ tweet }}</div>
+    <div>{{ tweet[0] }}</div>
+    <!-- the tweet is a tuple so we can index it by adding [0] this turns the tweet ('happy',) into happy -->
   {% endfor %}
 			
 

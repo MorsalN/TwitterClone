@@ -46,7 +46,11 @@ def insert_table(): #this is creating a funtion "def name():"
 
     c = conn.cursor()
     curr_user = request.cookies.get('userID')
-# user_id = c.execute("SELECT id FROM user WHERE username = '{}'".format(curr_user))
+# user_id = c.execute("SELECT id FROM user WHERE username = '{}'".format(curr_user))    
+    if curr_user is None:
+        go_to_login = redirect('/twitter_login')
+        return go_to_login
+
     user_tweets = c.execute("SELECT tweet FROM twittertable WHERE user_tweet= '{}'".format(curr_user))
     #it it's a POST Input: a tweet    Output: 
     if request.method == 'POST': #the client writes into the text then we receive a post from a form 
@@ -115,7 +119,7 @@ def login():
         password = request.form['password'] #getting the tweet through the form 
         login_user = user(username,password,c)
         conn.commit()
-        resp = make_response(render_template('/'))
+        resp = make_response(redirect('/'))
         resp.set_cookie('userID', username)
 
         return resp
@@ -129,6 +133,13 @@ def login_table(c): #calling in the c from above
     l_table = c.execute("select username, password from user;") #writing an sql statement showing all the attributes in the table 
     return l_table.fetchall() #this is returning all the attributes in the table
 
+@app.route('/twitter_logout')
+def logout():
+    # username.pop('logged_in', None)
+    # flash('You were logged out')
+    resp = make_response(redirect('/twitter_login')) #redirects to the login page when you log out 
+    resp.set_cookie('userID', '', expires=0)
+    return resp
 
 if __name__ == '__main__':
   app.run() 
