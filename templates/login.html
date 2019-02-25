@@ -8,6 +8,8 @@
 
 <!-- This is a login template from online -->
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+  <!-- the above link relates your html to your css -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -26,25 +28,23 @@
                     <div class="float">
                         <form class="form" method="POST" action="/twitter_login">
 
-                                <div> You have been logged out! Sign in below :) </div>
+                                <div class="signin"> SIGN IN HERE! </div>
                             
                             <div class="form-group">
-                                <label for="username" class="text-white">Username:</label><br>
+                                <label for="username" class="text-white"></label><br>
                                 <input type="text" name="username" id="username" class="form-control" placeholder="username" >
                             </div>
 
                             <div class="form-group">
-                                <label for="password" class="text-white">Password:</label><br>
+                                <label for="password" class="text-white"></label><br>
                                 <input type="text" name="password" id="password" class="form-control" placeholder="password">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-">
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                             </div>
 
-                            <div class="form-group" method="GET" action="/twitter_logout">
-                                <input type="logout" name="logout" class="btn btn-info btn-md" value="logout">
-                            </div>
+
                         </form>
 
 

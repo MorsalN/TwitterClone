@@ -1,76 +1,87 @@
+body {
+    background-color: #ffe2f7
+}
+
 .box {
     width: 500px;
     margin: 200px 0;
 }
 
-.shape1{
+/*.shape1{
     position: relative;
     height: 150px;
     width: 150px;
     background-color: #0074d9;
-    border-radius: 80px;
+    border-radius: 2000px;
     float: left;
     margin-right: -50px;
+    padding: 150px;
 }
 .shape2 {
     position: relative;
     height: 150px;
     width: 150px;
     background-color: #0074d9;
-    border-radius: 80px;
+    border-radius: 2000px;
     margin-top: -30px;
     float: left;
+    padding: 150px;
 }
 .shape3 {
     position: relative;
     height: 150px;
     width: 150px;
     background-color: #0074d9;
-    border-radius: 80px;
+    border-radius: 2000px;
     margin-top: -30px;
     float: left;
     margin-left: -31px;
+    padding: 150px;
 }
 .shape4 {
     position: relative;
     height: 150px;
     width: 150px;
     background-color: #0074d9;
-    border-radius: 80px;
+    border-radius: 2000px;
     margin-top: -25px;
     float: left;
     margin-left: -32px;
+    padding: 150px;
 }
 .shape5 {
     position: relative;
     height: 150px;
     width: 150px;
     background-color: #0074d9;
-    border-radius: 80px;
+    border-radius: 2000px;
     float: left;
     margin-right: -48px;
     margin-left: -32px;
     margin-top: -30px;
+    padding: 150px;
 }
 .shape6 {
     position: relative;
     height: 150px;
     width: 150px;
     background-color: #0074d9;
-    border-radius: 80px;
+    border-radius: 2000px;
     float: left;
     margin-right: -20px;
     margin-top: -35px;
-}
+    padding: 150px;
+}*/
 .shape7 {
     position: relative;
-    height: 150px;
-    width: 150px;
-    background-color: #0074d9;
-    border-radius: 80px;
+    height: 550px;
+    width: 550px;
+    background-color: #7083f9;
+    border-radius: 500px;
     float: left;
-    margin-right: -20px;
-    margin-top: -57px;
+    margin-left: -27px;
+    margin-top: -157px;
+    padding: 150px;
 }
 .float {
     position: absolute;
@@ -80,3 +91,25 @@
 .form {
     margin-left: 145px;
 }
+
+.signin {
+    position: relative;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+/*    text-align: center;*/
+    color: #ffffff;
+
+}
+
+.form-submit {
+    margin-left: 35px;
+}
+
+
+
+
+
+
+
+

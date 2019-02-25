@@ -39,7 +39,7 @@ def user(username, password, c):
     c.execute(query)
 
 
-
+#this "/" homepage is actually the page where the user types in their tweets 
 @app.route('/', methods = ['GET','POST']) 
 def insert_table(): #this is creating a funtion "def name():"
     conn = sqlite3.connect('twitter.db')
