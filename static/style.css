@@ -74,8 +74,8 @@ body {
 }*/
 .shape7 {
     position: relative;
-    height: 550px;
-    width: 550px;
+    height: 450px;
+    width: 450px;
     background-color: #7083f9;
     border-radius: 500px;
     float: left;
@@ -89,13 +89,15 @@ body {
 }
 
 .form {
-    margin-left: 145px;
+    margin-left: 30px;
+    margin-top: -50px;
+    size: -10px
 }
 
 .signin {
     position: relative;
-    margin-left: 35px;
-    margin-bottom: 20px;
+    margin-left: 34%;
+    margin-bottom: 15px;
     font-weight: bold;
 /*    text-align: center;*/
     color: #ffffff;
@@ -107,8 +109,19 @@ body {
 }*/
 
 .register {
+    position: relative;
     margin-left: 250px;
     margin-top: -38px;
+}
+
+.title {
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    margin-left: 39%;
+    font-size: 25px;
+    color: #17a2b8;
+    font-weight: bold;
 }
 
 
