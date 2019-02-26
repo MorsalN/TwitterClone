@@ -102,8 +102,13 @@ body {
 
 }
 
-.form-submit {
+/*.form-submit {
     margin-left: 35px;
+}*/
+
+.register {
+    margin-left: 250px;
+    margin-top: -38px;
 }
 
 
